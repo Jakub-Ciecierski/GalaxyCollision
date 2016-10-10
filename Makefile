@@ -113,15 +113,13 @@ MAKE_EXTERNAL =
 #---------------- LIBRARIES -------------------#
 
 # Paths and names of libraries to link with
-LIBS += -L /opt/cuda/lib64 \
-		-L /usr/local/cuda/lib64 \
+LIBS += -L /usr/local/cuda-8.0/lib64 \
 		-lGL -lglut -lGLEW -lcudart -lcuda
 
 #----------------- INCLUDES -------------------#
 
 # Paths to all Includes
-INCLUDES += -I /usr/local/cuda/include \
-    		-I /opt/cuda/include
+INCLUDES += -I /usr/local/cuda-8.0/include
 
 #------------------- FLAGS --------------------#
 
